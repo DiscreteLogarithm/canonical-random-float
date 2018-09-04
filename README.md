@@ -63,8 +63,8 @@ that into your source directory or copy it into the system's include path.
 Note that a canonical uniform variate is in [2<sup>-1</sup>, 2<sup>0</sup>) with probability 2<sup>-1</sup>, 
 or in [2<sup>-2</sup>, 2<sup>-1</sup>) with probability 2<sup>-2</sup>, or in [2<sup>-3</sup>, 
 2<sup>-2</sup>) with probability 2<sup>-3</sup>, and so on and so forth. This is a geometric distribution 
-with p=1/2. So the fraction part of the floating-point number is initialized with a uniform variate in [0.5, 
-1) and then it is multiplied by 2 raised to the power of a negative geometric variate. All floating-point 
+with p=1/2. So the fraction part of the floating-point number is initialized with a uniform variate in [0.5, 1)
+and then it is multiplied by 2 raised to the power of a negative geometric variate. All floating-point 
 values in the interval [0.5, 1) are evenly spaced just like fixed-point numbers.
 
 In a uniform integer each bit is 0 or 1 with independent equal probability 1/2, therefore the position of the 
